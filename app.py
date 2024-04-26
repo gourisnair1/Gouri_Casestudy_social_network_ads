@@ -15,10 +15,6 @@ def predict():
         print(age)
         salary = request.form['salary']
         print(salary)
-        # female = request.form['female']
-        # print(female)
-        # male = request.form['male']
-        # print(male)
         model = pickle.load(open('ad_model.pkl','rb'))
         purchased = model.predict([[float(gender),float(age),float(salary)]])
         print(purchased[0])
