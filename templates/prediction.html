@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <h1>Prediction Result</h1>
 <body text = "Red" bgcolor="lightblue"
@@ -10,6 +10,31 @@
 <br>
 <br>
 <p2>Note: 0 means The customer won't purchase the product.<br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    1 means The customer will purchase the product</p2>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+    <h1>Prediction Result</h1>
+<body text = "Red" bgcolor="lightblue" onload="myFunction()"
+<br><br>
+<p id="text1" style="display:none">The customer shall buy</p>
+<p id="text2" style="display:none">The customer shall not buy</p>
+
+<script>
+function myFunction() {
+  if (1 == {{purchased}})
+  {
+    text1.style.display = "block";
+    text2.style.display = "none";
+  }else {
+     text1.style.display = "none";
+     text2.style.display = "block";
+  }
+}
+</script>
 
 </body>
 </html>
